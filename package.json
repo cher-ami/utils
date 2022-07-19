@@ -1,0 +1,33 @@
+{
+  "name": "utils",
+  "version": "0.1.0",
+  "description": "Utils library browser and node",
+  "author": "Willy Brauner",
+  "type": "module",
+  "license": "MIT",
+  "source": "src/_index.ts",
+  "main": "dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cher-ami/utils.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && microbundle",
+    "build:watch": "microbundle watch --no-sourcemap --format esm",
+    "test:watch": "vitest",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4",
+    "vitest": "^0.18.1"
+  }
+}
