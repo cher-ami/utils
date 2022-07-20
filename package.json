@@ -1,5 +1,5 @@
 {
-  "name": "utils",
+  "name": "@cher-ami/utils",
   "version": "0.1.0",
   "description": "Utils library browser and node",
   "author": "Willy Brauner",
@@ -10,6 +10,7 @@
   "module": "./dist/index.module.js",
   "unpkg": "./dist/index.umd.js",
   "private": false,
+  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "git://github.com/cher-ami/utils.git"
