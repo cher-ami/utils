@@ -25,3 +25,13 @@ export function modulo(base: number, modulo: number): number {
 export function randomRange(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
+
+/**
+ * Lerp between two values
+ * @param start
+ * @param end
+ * @param amt
+ */
+export function lerp(start: number, end: number, amt: number): number {
+  return (1 - amt) * start + amt * end
+}
