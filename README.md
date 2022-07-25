@@ -18,6 +18,10 @@ npm i @cher-ami/utils
 
 - getCssVariable
 
+### [env](./src/env.ts)
+
+- isHandheldDevice
+
 ### [math](./src/math.ts)
 
 - clamp
