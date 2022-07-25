@@ -38,7 +38,7 @@ npm i @cher-ami/utils
 
 ### [string](./src/string.ts)
 
-- mergeClass
+- mergeStrings
 
 ## Licence
 
