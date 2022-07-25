@@ -1,10 +1,7 @@
 /**
- * Format className string
- * @param rest
+ * merge strings
  */
-export function mergeClass(...rest: string[]): string {
-  if (rest?.length === 0) return
-  return rest
-    .reduce((a, b) => (b ? a.concat(b) : a), [])
-    .join(" ")
+export function mergeStrings(str: any[], join: string = " "): string {
+  if (str?.length === 0) return
+  return str.reduce((a, b) => (b ? a.concat(b) : a), []).join(join)
 }
