@@ -1,6 +1,6 @@
 {
   "name": "@cher-ami/utils",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Browser and node utils library",
   "author": "Willy Brauner",
   "type": "module",
