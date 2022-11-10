@@ -18,9 +18,23 @@ npm i @cher-ami/utils
 
 - getCssVariable
 
-### [env](./src/env.ts)
+### [env](./src/envs.ts)
 
+- isServer
+- isBrowser
+- serverOnly
+- browserOnly
+- isAndroid
+- isWindowsPhone
+- isiPhone
+- isiPod
+- isiPad
+- isiOS
 - isHandheldDevice
+- isTouchDevice
+- isChrome
+- isFirefox
+- isSafari
 
 ### [math](./src/math.ts)
 
