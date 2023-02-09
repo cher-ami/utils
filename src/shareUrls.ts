@@ -12,6 +12,13 @@ export const facebookShareUrl = (siteUrl: string = window.location.href): string
   `https://www.facebook.com/sharer/sharer.php?u=${siteUrl}`
 
 /**
+ * LinkedIn
+ * @param siteUrl
+ */
+export const linkedInShareUrl = (siteUrl: string = window.location.href): string =>
+  `https://www.linkedin.com/sharing/share-offsite/?url=${siteUrl}`
+
+/**
  * Twitter
  * @param url
  * @param text
@@ -31,7 +38,7 @@ export const twitterShareUrl = (
     via && `&text=${via}`,
     hashtags && `&hashtags=${hashtags}`,
   ]
-    .filter((e) => e)
+    .filter(e => e)
     .join("")
 
 /**
@@ -64,3 +71,21 @@ export const whatsappShareUrl = (
   isHandedDevice
     ? `whatsapp://send?text=${text}%20${url}`
     : `https://api.whatsapp.com/send?text=${text}%20${url}`
+
+/**
+ * Native share on mobile
+ * @param url
+ * @param text
+ * @param isHandedDevice
+ */
+export const nativeSharePopin = async (
+  title: string = document.title,
+  text: string,
+  url: string = window.location.href
+) => {
+  try {
+    await navigator.share({ title, text, url })
+  } catch (err) {
+    console.log("Error")
+  }
+}
