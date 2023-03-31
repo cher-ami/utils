@@ -35,3 +35,19 @@ export function randomRange(min: number, max: number): number {
 export function lerp(start: number, end: number, amt: number): number {
   return (1 - amt) * start + amt * end
 }
+
+/**
+ * Normalized value
+ * Return value between 0 and 1 (include)
+ * 
+ * normalizeValue(-20, -15, 0)  // 0.25
+ * normalizeValue(-20, 0, 20)   // 0.5
+ * normalizeValue(0, 15, 20)    // 0.75
+ * 
+ * @param min
+ * @param value
+ * @param max
+ */
+export const normalizeValue = (min, value, max): number => {
+  return (value - min) / (max - min)
+}
