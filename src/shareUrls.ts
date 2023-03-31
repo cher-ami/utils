@@ -57,7 +57,7 @@ export const facebookMessengerShareUrl = (
 
   return isHandedDevice
     ? `fb-messenger://share/?link=${encodeURIComponent(url)}${appId}`
-    : `http://www.facebook.com/dialog/send/?&link=${url}&redirect_uri=${url}${appId}`;
+    : `http://www.facebook.com/dialog/send/?link=${url}&redirect_uri=${url}${appId}`;
 }
 
 /**
