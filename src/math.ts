@@ -51,3 +51,19 @@ export function lerp(start: number, end: number, amt: number): number {
 export const normalizeValue = (min, value, max): number => {
   return (value - min) / (max - min)
 }
+
+/**
+ * Original value
+ * Return value between min and max (include)
+ * 
+ * normalizeValue(-20, 0.25, 0)  // -15
+ * normalizeValue(-20, 0.5, 20)  // 0
+ * normalizeValue(0, 0.75, 20)   // 15
+ * 
+ * @param min
+ * @param normalizedValue
+ * @param max
+ */
+export const originalValue = (min, normalizedValue, max): number => {
+  return normalizedValue * (max - min) + min
+}
