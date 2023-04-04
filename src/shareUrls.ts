@@ -50,12 +50,15 @@ export const twitterShareUrl = (
 // prettier-ignore
 export const facebookMessengerShareUrl = (
   url: string,
-  facebookAppId: number,
-  isHandedDevice: boolean
-): string =>
-  isHandedDevice
-    ? `fb-messenger://share?link=${encodeURIComponent(url)}&app_id=${encodeURIComponent(facebookAppId)}`
-    : `http://www.facebook.com/dialog/send?app_id=${facebookAppId}&link=${url}&redirect_uri=${url}`;
+  isHandedDevice: boolean,
+  facebookAppId?: number
+): string => {
+  const appId = facebookAppId ? `&app_id=${encodeURIComponent(facebookAppId)}` : ""
+
+  return isHandedDevice
+    ? `fb-messenger://share/?link=${encodeURIComponent(url)}${appId}`
+    : `http://www.facebook.com/dialog/send/?link=${url}&redirect_uri=${url}${appId}`;
+}
 
 /**
  * Whatsapp
