@@ -42,6 +42,8 @@ npm i @cher-ami/utils
 - modulo
 - randomRange
 - lerp
+- normalizeValue
+- originalValue
 
 ### [shareUrls](./src/shareUrls.ts)
 
