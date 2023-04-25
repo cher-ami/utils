@@ -43,7 +43,7 @@ npm i @cher-ami/utils
 - randomRange
 - lerp
 - normalizeValue
-- originalValue
+- originalValueFromNormalized
 
 ### [shareUrls](./src/shareUrls.ts)
 
