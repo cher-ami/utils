@@ -6,6 +6,9 @@
 export function isServer(): boolean {
   return typeof window === "undefined"
 }
+export function isSSR(): boolean {
+  return isServer()
+}
 export function isBrowser(): boolean {
   return !isServer()
 }
@@ -83,3 +86,4 @@ export function isSafari(): boolean {
     () => navigator.userAgent.toLowerCase().indexOf("safari") > -1
   )
 }
+

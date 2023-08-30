@@ -10,15 +10,15 @@ npm i @cher-ami/utils
 
 ## List
 
-### [array](./src/array.ts)
+### [array](src/array/array.ts)
 
 - shuffleArray
 
-### [dom](./src/dom.ts)
+### [dom](src/dom/dom.ts)
 
 - getCssVariable
 
-### [env](./src/envs.ts)
+### [env](src/envs/envs.ts)
 
 - isServer
 - isBrowser
@@ -36,7 +36,7 @@ npm i @cher-ami/utils
 - isFirefox
 - isSafari
 
-### [math](./src/math.ts)
+### [math](src/math/math.ts)
 
 - clamp
 - modulo
@@ -45,14 +45,14 @@ npm i @cher-ami/utils
 - normalizeValue
 - originalValueFromNormalized
 
-### [shareUrls](./src/shareUrls.ts)
+### [shareUrls](src/social/shareUrls.ts)
 
 - facebookShareUrl
 - twitterShareUrl
 - facebookMessengerShareUrl
 - whatsappShareUrl
 
-### [string](./src/string.ts)
+### [string](src/string/string.ts)
 
 - mergeStrings
 
