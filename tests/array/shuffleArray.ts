@@ -1,6 +1,5 @@
 import { describe, expect, it } from "vitest"
-import { shuffleArray } from "../src/array"
-const { log } = console
+import { shuffleArray } from "../../src"
 
 describe("shuffleArray", () => {
   it("should return the same array reference", () => {

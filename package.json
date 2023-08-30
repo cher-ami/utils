@@ -5,10 +5,9 @@
   "author": "Willy Brauner",
   "type": "module",
   "license": "MIT",
-  "source": "src/_index.ts",
   "main": "dist/index.cjs",
-  "module": "./dist/index.module.js",
-  "unpkg": "./dist/index.umd.js",
+  "module": "./dist/index.js",
+  "types": "./dist/interpol.d.ts",
   "private": false,
   "sideEffects": false,
   "repository": {
@@ -20,17 +19,18 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "npm run clean && microbundle",
-    "build:watch": "microbundle watch --no-sourcemap --format esm",
+    "build": "tsup",
+    "build:watch": "tsup --watch --sourcemap",
     "test:watch": "vitest",
     "test": "vitest run",
     "pre-publish": "npm run build && npm run test"
   },
   "devDependencies": {
-    "microbundle": "^0.15.0",
-    "prettier": "^2.7.1",
-    "typescript": "^4.7.4",
-    "vitest": "^0.18.1"
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.3",
+    "@types/node": "^20.5.7",
+    "tsup": "^7.2.0"
   },
   "prettier": {
     "semi": false
