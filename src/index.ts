@@ -1,8 +1,8 @@
 // array
 export { shuffleArray } from "./array/shuffleArray"
 // dom
-export { getCssVariable } from "./dom/getCssVariable"
 export { cls } from "./dom/cls"
+export { listen, listenOnce, listenCompose } from "./dom/listener"
 // envs
 export * from "./envs/envs"
 // maths
