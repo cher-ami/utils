@@ -9,7 +9,7 @@ describe("deferredPromise", () => {
   it('should resolve the deferred promise', async () => {
     let resolve = false
     let reject = false
-    const deferred = deferredPromise<void>()
+    const deferred = deferredPromise()
 
     deferred.promise
       .then(() => {
@@ -33,7 +33,7 @@ describe("deferredPromise", () => {
 
     let resolve = false
     let reject = false
-    const deferred = deferredPromise<void>()
+    const deferred = deferredPromise()
 
     deferred.promise
       .then(() => {
