@@ -6,10 +6,10 @@
  * @returns string
  * @example
  *
- *    clx("a", "b") // "a b"
- *    clx(false && "a", "b") // "b"
+ *    cls("a", "b") // "a b"
+ *    cls(false && "a", "b") // "b"
  *
  */
-export function clx(...classes: (boolean | string)[]): string {
+export function cls(...classes: (boolean | string)[]): string {
   return classes?.filter(Boolean).join(" ")
 }
