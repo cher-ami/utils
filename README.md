@@ -23,6 +23,7 @@ modulo(5, 2); // 1
 - [dom](src/dom)
 - [envs](src/envs)
 - [math](src/math)
+- [promise](src/promise)
 - [social](src/social)
 - [string](src/string)
 
