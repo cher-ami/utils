@@ -8,53 +8,61 @@ Browser & node utils for cher-ami projects.
 npm i @cher-ami/utils
 ```
 
-## List
+## Usage
 
-### [array](src/array/array.ts)
+Import all utils from @cher-ami/utils
+```js
+import { modulo } from '@cher-ami/utils';
 
-- shuffleArray
+modulo(5, 2); // 1
+```
 
-### [dom](src/dom/dom.ts)
+## Util categories
 
-- getCssVariable
+- [array](src/array)
+- [dom](src/dom)
+- [envs](src/envs)
+- [math](src/math)
+- [social](src/social)
+- [string](src/string)
 
-### [env](src/envs/envs.ts)
 
-- isServer
-- isBrowser
-- serverOnly
-- browserOnly
-- isAndroid
-- isWindowsPhone
-- isiPhone
-- isiPod
-- isiPad
-- isiOS
-- isHandheldDevice
-- isTouchDevice
-- isChrome
-- isFirefox
-- isSafari
+## Development
 
-### [math](src/math/math.ts)
+```shell
+# install dependencies
+pnpm i
 
-- clamp
-- modulo
-- randomRange
-- lerp
-- normalizeValue
-- originalValueFromNormalized
+# run tests
+pnpm test
 
-### [shareUrls](src/social/shareUrls.ts)
+# run tests in watch mode
+pnpm test:watch
 
-- facebookShareUrl
-- twitterShareUrl
-- facebookMessengerShareUrl
-- whatsappShareUrl
+# build in watch mode
+pnpm build:watch
 
-### [string](src/string/string.ts)
+# build for production
+pnpm build
+```
 
-- mergeStrings
+## Publish a new version
+
+```shell
+# build and tests
+pnpm pre-publish
+
+# increment version in package.json
+npm verion {patch|minor|major}
+
+# push to github with tags
+git push --follow-tags
+
+# publish to npm (you need to be logged in)
+npm publish
+
+# then create a release on github
+```
 
 ## Licence
 
