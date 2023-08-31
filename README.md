@@ -10,47 +10,47 @@ npm i @cher-ami/utils
 
 ## List
 
-### [array](src/array/array.ts)
+###  [array](src/array)
+- [shuffleArray](src/array/shuffleArray.ts) 
 
-- shuffleArray
+### [dom](src/dom)
+- [getCssVariable](src/dom/getCssVariable.ts)
 
-### [dom](src/dom/dom.ts)
+### [envs](src/envs)
 
-- getCssVariable
+- [envs](src/envs/envs.ts)
+  - isServer
+  - isBrowser
+  - serverOnly
+  - browserOnly
+  - isAndroid
+  - isWindowsPhone
+  - isiPhone
+  - isiPod
+  - isiPad
+  - isiOS
+  - isHandheldDevice
+  - isTouchDevice
+  - isChrome
+  - isFirefox
+  - isSafari
 
-### [env](src/envs/envs.ts)
+### [math](src/math)
 
-- isServer
-- isBrowser
-- serverOnly
-- browserOnly
-- isAndroid
-- isWindowsPhone
-- isiPhone
-- isiPod
-- isiPad
-- isiOS
-- isHandheldDevice
-- isTouchDevice
-- isChrome
-- isFirefox
-- isSafari
+- [clamp](src/math/clamp.ts)
+- [lerp](src/math/lerp.ts)
+- [modulo](src/math/modulo.ts)
+- [normalizeValue](src/math/normalizeValue.ts)
+- [originalValueFromNormalized](src/math/normalizeValue.ts)
+- [randomRange](src/math/randomRange.ts)
 
-### [math](src/math/math.ts)
+### [social](src/social)
 
-- clamp
-- modulo
-- randomRange
-- lerp
-- normalizeValue
-- originalValueFromNormalized
-
-### [shareUrls](src/social/shareUrls.ts)
-
-- facebookShareUrl
-- twitterShareUrl
-- facebookMessengerShareUrl
-- whatsappShareUrl
+- [shareUrls](src/social/shareUrls.ts)
+  - facebookShareUrl
+  - twitterShareUrl
+  - facebookMessengerShareUrl
+  - whatsappShareUrl
 
 ### [string](src/string/string.ts)
 
