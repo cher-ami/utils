@@ -18,3 +18,4 @@ tsconfig.json
 vitest.config.ts
 vite.config.ts
 .turbo
+tsup.config.ts
