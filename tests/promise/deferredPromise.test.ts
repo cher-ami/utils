@@ -1,4 +1,4 @@
-import {describe, expect, it} from "vitest"
+import { describe, expect, it } from "vitest"
 import { deferredPromise, waitPromise } from "../../src"
 
 /**
@@ -6,7 +6,7 @@ import { deferredPromise, waitPromise } from "../../src"
  * Mainly stolen from https://github.com/willybrauner/deferred-promise/blob/main/test/index.test.ts
  */
 describe("deferredPromise", () => {
-  it('should resolve the deferred promise', async () => {
+  it("should resolve the deferred promise", async () => {
     let resolve = false
     let reject = false
     const deferred = deferredPromise()
@@ -29,8 +29,7 @@ describe("deferredPromise", () => {
     expect(reject).toBe(false)
   })
 
-  it('should reject the deferred promise', async () => {
-
+  it("should reject the deferred promise", async () => {
     let resolve = false
     let reject = false
     const deferred = deferredPromise()
@@ -52,5 +51,4 @@ describe("deferredPromise", () => {
     expect(resolve).toBe(false)
     expect(reject).toBe(true)
   })
-
 })

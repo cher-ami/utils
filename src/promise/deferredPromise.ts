@@ -21,18 +21,18 @@
  */
 
 export type TDeferredPromise<T = any> = {
-  promise: Promise<T>;
-  resolve: (resolve?: T) => void;
-  reject: (error?: Error | any) => void;
-};
+  promise: Promise<T>
+  resolve: (resolve?: T) => void
+  reject: (error?: Error | any) => void
+}
 
 export function deferredPromise<T = any>(): TDeferredPromise<T> {
-  const deferred: TDeferredPromise<T> | any = {};
+  const deferred: TDeferredPromise<T> | any = {}
 
   deferred.promise = new Promise((resolve, reject) => {
-    deferred.resolve = resolve;
-    deferred.reject = reject;
-  });
+    deferred.resolve = resolve
+    deferred.reject = reject
+  })
 
-  return deferred;
+  return deferred
 }
