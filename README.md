@@ -8,53 +8,61 @@ Browser & node utils for cher-ami projects.
 npm i @cher-ami/utils
 ```
 
-## List
+## Usage
 
-###  [array](src/array)
-- [shuffleArray](src/array/shuffleArray.ts) 
+Import all utils from @cher-ami/utils
+```js
+import { modulo } from '@cher-ami/utils';
 
-### [dom](src/dom)
-- [getCssVariable](src/dom/getCssVariable.ts)
+modulo(5, 2); // 1
+```
 
-### [envs](src/envs)
+## Util categories
 
-- [envs](src/envs/envs.ts)
-  - isServer
-  - isBrowser
-  - serverOnly
-  - browserOnly
-  - isAndroid
-  - isWindowsPhone
-  - isiPhone
-  - isiPod
-  - isiPad
-  - isiOS
-  - isHandheldDevice
-  - isTouchDevice
-  - isChrome
-  - isFirefox
-  - isSafari
+- [array](src/array)
+- [dom](src/dom)
+- [envs](src/envs)
+- [math](src/math)
+- [social](src/social)
+- [string](src/string)
 
-### [math](src/math)
 
-- [clamp](src/math/clamp.ts)
-- [lerp](src/math/lerp.ts)
-- [modulo](src/math/modulo.ts)
-- [normalizeValue](src/math/normalizeValue.ts)
-- [originalValueFromNormalized](src/math/normalizeValue.ts)
-- [randomRange](src/math/randomRange.ts)
+## Development
 
-### [social](src/social)
+```shell
+# install dependencies
+pnpm i
 
-- [shareUrls](src/social/shareUrls.ts)
-  - facebookShareUrl
-  - twitterShareUrl
-  - facebookMessengerShareUrl
-  - whatsappShareUrl
+# run tests
+pnpm test
 
-### [string](src/string/string.ts)
+# run tests in watch mode
+pnpm test:watch
 
-- mergeStrings
+# build in watch mode
+pnpm build:watch
+
+# build for production
+pnpm build
+```
+
+## Publish a new version
+
+```shell
+# build and tests
+pnpm pre-publish
+
+# increment version in package.json
+npm verion {patch|minor|major}
+
+# push to github with tags
+git push --follow-tags
+
+# publish to npm (you need to be logged in)
+npm publish
+
+# then create a release on github
+```
 
 ## Licence
 
