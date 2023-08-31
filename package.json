@@ -7,7 +7,7 @@
   "license": "MIT",
   "main": "dist/index.cjs",
   "module": "./dist/index.js",
-  "types": "./dist/interpol.d.ts",
+  "types": "./dist/index.d.ts",
   "private": false,
   "sideEffects": false,
   "repository": {
