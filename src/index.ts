@@ -2,6 +2,7 @@
 export { shuffleArray } from "./array/shuffleArray"
 // dom
 export { getCssVariable } from "./dom/getCssVariable"
+export { cls } from "./dom/cls"
 // envs
 export * from "./envs/envs"
 // maths
