@@ -11,6 +11,10 @@ export { clamp } from "./math/clamp"
 export { modulo } from "./math/modulo"
 export { normalizeValue } from "./math/normalizeValue"
 export { originalValueFromNormalized } from "./math/normalizeValue"
+// promise
+export { deferredPromise } from "./promise/deferredPromise"
+export type { TDeferredPromise } from "./promise/deferredPromise"
+export { waitPromise } from "./promise/waitPromise"
 // socials
 export * from "./social/shareUrls"
 // strings
