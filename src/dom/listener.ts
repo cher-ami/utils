@@ -23,9 +23,9 @@ export function listen<
   options?: boolean | AddEventListenerOptions,
 ): () => void {
   if (typeof event === "string") event = [event]
-  for (let name of event) obj.addEventListener(name, callback, options)
+  for (let name of event) obj?.addEventListener(name, callback, options)
   return () => {
-    for (let name of event) obj.removeEventListener(name, callback, options)
+    for (let name of event) obj?.removeEventListener(name, callback, options)
   }
 }
 
