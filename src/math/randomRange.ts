@@ -2,9 +2,9 @@
  * Get random value between min and max (include)
  * @param min
  * @param max
- * @param decimal
+ * @param decimalNumber 1 = 0.1, 2 = 0.01, 3 = 0.001
  */
-export function randomRange(min: number, max: number, decimal = 0): number {
-  const power = Math.pow(10, decimal)
-  return Math.floor(Math.random() * (max - min + 1) + min * power) / power
+export function randomRange(min: number, max: number, decimalNumber = 0): number {
+  if (decimalNumber < 0) return
+  return parseFloat((Math.random() * (max - min) + min).toFixed(decimalNumber))
 }

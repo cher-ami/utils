@@ -11,6 +11,7 @@ export { clamp } from "./math/clamp"
 export { modulo } from "./math/modulo"
 export { normalizeValue } from "./math/normalizeValue"
 export { originalValueFromNormalized } from "./math/normalizeValue"
+export { randomRange } from "./math/randomRange"
 // promise
 export { deferredPromise } from "./promise/deferredPromise"
 export type { TDeferredPromise } from "./promise/deferredPromise"
