@@ -1,16 +1,25 @@
 import { describe, expect, it } from "vitest"
-import { closestNumberInArray } from "../../src"
+import { getClosestNumberInArray } from "../../src"
+import { n } from "vitest/dist/reporters-2ff87305"
 
-describe("closestNumber", () => {
-  it("should return 0.25", () => {
-    const array = [0, 0.25, 0.5, 0.75, 1]
-    const closestNumber = closestNumberInArray(0.2, array)
-    expect(closestNumber).toBe(0.25)
+describe("closestNumberInArray", () => {
+  it("should return the closest value", () => {
+
+
+    const data: [number, number[], number][] = [
+      [0.2, [0, 0.25, 0.5, 0.75, 1], 0.25],
+      // TODO other examples
+      [0.2, [0, 0.25, 0.5, 0.75, 1], 0.25],
+      [0.2, [0, 0.25, 0.5, 0.75, 1], 0.25],
+    ]
+
+    for (let [input, array, result] of data) {
+      expect(getClosestNumberInArray(input, array)).toBe(result)
+    }
   })
 
-  it("should return 20", () => {
-    const array = [10, 20, 30, 40, 50]
-    const closestNumber = closestNumberInArray(25, array)
+  it("should return the smallest closest value if number is between two value", () => {
+    const closestNumber = getClosestNumberInArray(25, [10, 20, 30, 40, 50])
     expect(closestNumber).toBe(20)
   })
 })
