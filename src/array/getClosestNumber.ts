@@ -13,7 +13,7 @@ export function getClosestNumberInArray(
   input: number,
   array: number[],
 ): number {
-  if (input === null || input === undefined || array.length < 1) return 0
+  if (input == null || array?.length < 1) return
 
   return array.reduce((a, b) =>
     Math.abs(b - input) < Math.abs(a - input) ? b : a,

@@ -6,9 +6,9 @@ describe("closestNumberInArray", () => {
 
 
     const data: [number, number[], number][] = [
-      [-100, [], 0],
-      [null, [10, 20], 0],
-      [undefined, [], 0],
+      [-100, [], undefined],
+      [null, [10, 20], undefined],
+      [undefined, [], undefined],
 
       [-1, [-100, 0, 0.25, 0.5, 0.75, 1], 0],
       [-51, [-100, 0, 0.25, 0.5, 0.75, 1], -100],
